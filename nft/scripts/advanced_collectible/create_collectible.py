@@ -13,10 +13,8 @@ def main():
     # wait for the 2nd transaction
     transaction.wait(1)
     # time.sleep(35)
-    listen_for_event(
-        advanced_collectible, "ReturnedCollectible", timeout=200, poll_interval=10
-    )
+    listen_for_event(advanced_collectible, "ReturnedCollectible", timeout=200, poll_interval=10)
     requestId = transaction.events["RequestedCollectible"]["requestId"]
     token_id = advanced_collectible.requestIdToTokenId(requestId)
     breed = get_breed(advanced_collectible.tokenIdToBreed(token_id))
-    print("Dog breed of tokenId {} is {}".format(token_id, breed))
+    print(f"Dog breed of tokenId {token_id} is {breed}")

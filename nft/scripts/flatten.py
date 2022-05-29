@@ -8,6 +8,5 @@ def main():
 
 
 def flatten():
-    file = open("./AdvancedCollectible_flattened.json", "w")
-    json.dump(AdvancedCollectible.get_verification_info(), file)
-    file.close()
+    with open("./AdvancedCollectible_flattened.json", "w") as file:
+        json.dump(AdvancedCollectible.get_verification_info(), file)
