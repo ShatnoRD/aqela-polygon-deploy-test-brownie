@@ -1,6 +1,6 @@
 # Quickstart Guide
 
-Shortened version of the official [Polygon](https://docs.polygon.technology/docs/develop/quicknode/) brownie guide
+Shortened version of the official [Polygon](https://docs.polygon.technology/docs/develop/quicknode/) development using brownie guide
 
 ## Installation
 
@@ -12,7 +12,7 @@ pip3 install eth-brownie
 
 ## First steps
 
-Load erc20,erc721 demo projects
+Load erc20, erc721 demo projects
 
 ```python
 brownie bake token
@@ -198,5 +198,4 @@ Awesome! You can view your NFT at https://testnets.opensea.io/assets/0xF93adb213
 Please give up to 20 minutes, and hit the "refresh metadata" button
 ```
 
-The since the sample_token_uri is set to a no longer accessible uri source, the deployed token's uri will return 404 not found as well, but the minting was succesfull reggardless of that
-Check out the [transaction](https://mumbai.polygonscan.com/tx/0xcaa596a2414bc521e129f4e753b25f9cad8932b85518428c6f44ae02c306a9e0) containing the createCollectible function call
+The since the sample_token_uri is set to a no longer accessible uri source, the deployed token's uri will return 404 not found as well, but the minting was succesfull as you can see the [transaction](https://mumbai.polygonscan.com/tx/0xcaa596a2414bc521e129f4e753b25f9cad8932b85518428c6f44ae02c306a9e0) containing the createCollectible function call
